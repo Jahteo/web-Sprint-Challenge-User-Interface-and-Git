@@ -255,6 +255,7 @@ footer nav a {
     /* max-height: 100%; */
     /* display: flex; */
     /* flex-direction: column; */
+    /* hit brick wall trying to get content above and below to respect top & bottom margins of links. */
 }
 
 .about-page .main-content div a {
