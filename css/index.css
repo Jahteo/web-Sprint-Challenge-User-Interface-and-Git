@@ -81,7 +81,6 @@ a {
 }
 
 /* Header  */
-/* Q: Doesn't it make more sense to just make the img inline & then make the nav a flexbox? */
 
 header div {
     width: 100%;
@@ -103,6 +102,29 @@ header a {
 header img {
     padding: 0 0 2% 0;
 }
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background: black;
+}
+
+footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HOME PAGE */
 
 /* Top Content */
 
@@ -205,23 +227,41 @@ header img {
     padding-right: 0;
 }
 
-/* Footer */
+/* ABOUT PAGE */
 
-footer {
-    width: 100%;
-    background: black;
+/* Border Content */
+
+.about-page .border-content {
+    padding: 2%;
+    border-bottom: 1px dashed black;
 }
 
-footer nav {
-    width: 60%;
+/* Main Content */
+
+.about-page .main-content {
+    padding: 2% 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    Flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: space-around;
 }
 
-footer nav a {
-    color: white;
-    text-decoration: none;
+.about-page .main-content div {
+    width: 46%;
+    border-bottom: 1px dashed black;
+    margin-bottom: 6%;
+    max-width: 100%;
+    max-height: 100%;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.about-page .main-content div a {
+    color: black;
+    border: 2px solid black;
+    border-radius: 10%;
+    /* flex-grow: 20; */
+    padding: 2% 3%;
+    margin: 4% 0;
 }
